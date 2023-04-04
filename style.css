@@ -35,6 +35,7 @@ main {
   border-left:4px solid #ffffff;
   font-family: 'Lato', sans-serif;
   color: #fff;
+  text-shadow: 1px 1px 4px #2c20d3a1;
 }
 
 main h1 {
@@ -52,6 +53,10 @@ main p {
 main a {
   text-decoration: none;
   color: #fff;
+}
+
+main a:hover {
+
 }
 
 main > img {
