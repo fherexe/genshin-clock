@@ -40,6 +40,18 @@ main {
 main h1 {
   text-align: center;
   font-size: 7vh;
+  font-weight: 400;
+}
+
+main p {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 25%;
+}
+
+main a {
+  text-decoration: none;
+  color: #fff;
 }
 
 main > img {
