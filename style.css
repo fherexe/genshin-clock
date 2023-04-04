@@ -1,17 +1,22 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
     background-image: url(img/yelan.webp);
     display: flex;
     justify-content: end;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 95vh;
+    height: 100vh;
 }
   
 main{
   backdrop-filter: blur(10px);
-  max-height: 100%;
-  padding:10px 2em;
-  
+  padding:0 2em;
+  border-left:4px solid #ffffffaf;
 }
 
 .relogio {
@@ -19,7 +24,7 @@ main{
   font-family: arial;
   color: #fff;
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
  
