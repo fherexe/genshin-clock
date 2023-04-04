@@ -16,20 +16,19 @@ body {
     height: 100vh;
 }
 
-.zhongli{
+.zhongli {
   background-image: url(img/zhongli.jpg);
   transition: all 0.25s ease-in-out;
 }
-.yelan{
+.yelan {
   background-image: url(img/yelan.jpg);
   transition: all 0.25s ease-in-out;
 }
-.dehya{
+.dehya {
   background-image: url(img/dehya.jpg);
   transition: all 0.25s ease-in-out;
 }
 
-  
 main {
   backdrop-filter: blur(10px);
   padding:0 2em;
@@ -43,25 +42,30 @@ main h1 {
   font-size: 7vh;
 }
 
-main img {
+main > img {
   width: 300px;
   margin-top: 30%;
 }
 
-button {
-  border: none;
-}
-
 .container {
+  margin-top: 10%;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
 .container img {
-  border: 2px solid;
+  
   width: 90px;
   border-radius: 50%;
+  filter: brightness(75%);
+  border: 2px solid #f8f8f8c0;
+}
+
+.container img:hover {
+  border: 2px solid;
+  filter: brightness(100%);
 }
 
 .relogio {
