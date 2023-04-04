@@ -13,7 +13,6 @@ function clock () {
 
 setInterval(clock, 1000);
 
-
 document.getElementById("btn-zhongli").addEventListener("click", function(){
     document.querySelector("body").setAttribute("class","zhongli");
 })
