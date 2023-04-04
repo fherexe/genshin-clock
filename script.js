@@ -14,3 +14,14 @@ function clock () {
 setInterval(clock, 1000);
 
 
+document.getElementById("btn-zhongli").addEventListener("click", function(){
+    document.querySelector("body").setAttribute("class","zhongli");
+})
+  
+  document.getElementById("btn-yelan").addEventListener("click", function(){
+    document.querySelector("body").setAttribute("class","yelan");
+})
+  
+  document.getElementById("btn-dehya").addEventListener("click", function(){
+    document.querySelector("body").setAttribute("class","dehya");
+})

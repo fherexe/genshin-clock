@@ -8,13 +8,27 @@
 }
 
 body {
-    background-image: url(img/yelan.webp);
+    background-image: url(img/yelan.jpg);
     display: flex;
     justify-content: end;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+.zhongli{
+  background-image: url(img/zhongli.jpg);
+  transition: all 0.25s ease-in-out;
+}
+.yelan{
+  background-image: url(img/yelan.jpg);
+  transition: all 0.25s ease-in-out;
+}
+.dehya{
+  background-image: url(img/dehya.jpg);
+  transition: all 0.25s ease-in-out;
+}
+
   
 main {
   backdrop-filter: blur(10px);
@@ -32,6 +46,22 @@ main h1 {
 main img {
   width: 300px;
   margin-top: 30%;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container img {
+  border: 2px solid;
+  width: 90px;
+  border-radius: 50%;
 }
 
 .relogio {
