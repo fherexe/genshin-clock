@@ -1,0 +1,274 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --bg: #0D121E;
+    --bg2: #080C14;
+    --bg3: #FFF7EC;
+
+    --title: var(--complement);
+    --text: #fff;
+    --primaryBtn: #dbb274;
+    --secundaryBtn: #07060B;
+
+    --other1: #fddeb0;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+}
+
+.img-web {
+    background-image: url(/img/itens/dots.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 0 90%;
+    padding: 20px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
+    background: var(--bg2);
+    margin-top: 10vh;
+}
+
+
+main h2 {
+    font-size: max(1.4em, 2.1vw);
+    font-weight: 500;
+    margin: 10% 0 5% 0;
+    border-left: 2px solid var(--primaryBtn);
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+main h3 {
+    font-size: 24px;
+    color: var(--primaryBtn);
+    margin-bottom: 10px;
+}
+
+.website {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    border: solid red;
+}
+
+main ul {
+    list-style: circle;
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+.website img {
+    width: 350px;
+}
+
+.website-btn {
+    margin-top: 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.website-btn a {
+    color: var(--bg);
+    font-weight: 500;
+    padding: 5px 20px;
+    background: var(--primaryBtn);
+    border-radius: 4px;
+}
+
+.website-btn a:hover {
+    background: var(--other1);
+}
+
+.projects {
+    margin: 5% 0 10% 0;
+    text-align: center;
+}
+
+.projects a {
+    color: var(--primaryBtn);
+    border: solid var(--primaryBtn);
+    border-radius: 12px 0 12px 0;
+    padding: 5px 20px;
+    font-size: 1.3rem;
+}
+
+
+.projects a:hover {
+    color: var(--bg);
+    background: var(--primaryBtn);
+    transition: 200ms ease-in-out;
+}
+
+
+/* ----------------------- Footer ------------------ */
+
+footer {
+    min-height: 10vh;
+    background: var(--bg2);
+    padding: 2% 15%;
+}
+
+footer span {
+    color: #fff;
+    margin-right: 2px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container a {
+    color: #dbb274;
+}
+
+.footer-container ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 5px;
+}
+
+.footer-container ul li {
+    margin-top: 4px;
+    letter-spacing: 1.5px;
+}
+
+footer hr {
+    margin: 2% 5%;
+}
+
+
+footer p {
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 3%;
+}
+
+.social i {
+    font-size: 2.1em;
+    color: var(--primaryBtn);
+}
+
+.social i:hover {
+    color: var(--other1);
+}
+
+#section1 .social span {
+    display: block;
+}
+
+
+.social span i {
+    font-size: 1.7em;
+
+}
+
+footer .social {
+    justify-content: center;
+    margin: 1% 0;
+}
+
+
+
+/* -------------------------------- Responsive config ------------------------------------------- */
+@media screen and (max-width: 850px) {
+
+    .social {
+        justify-content: center;
+    }
+
+    .mobile-off {
+        display: none;
+    }
+
+    .mobile-on {
+        display: block;
+    }
+
+    #section2 p {
+        width: 100%;
+    }
+
+    #section2 h2 span a {
+        display: block;
+    }
+
+    .section2-container ul {
+        margin: 10px 0;
+        border-left: none;
+
+    }
+
+    .section3-container>div {
+        margin-bottom: 10%;
+    }
+
+    .website {
+        flex-direction: column;
+    }
+
+    .web2 {
+        flex-direction: column-reverse;
+    }
+
+
+    .footer-container h4 {
+        margin: 20px 0;
+    }
+
+    .footer-container ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer .social {
+        margin: 20px;
+    }
+}
